@@ -26,13 +26,14 @@ function create() {
     return instance;
 }
 
-module.exports = create;
+var i = create();
+
+module.exports = i;
 
 //for test.js
 
 // const i = require('./index');
-// let j = i();
-// const mandarin = j.getAnonymous('Unknown', 'Mandarin', 'Ten Rings');
+// const mandarin = i.getAnonymous('Unknown', 'Mandarin', 'Ten Rings');
 // console.log([mandarin.name,
 //     mandarin.alias,
 //     mandarin.affiliation,].
